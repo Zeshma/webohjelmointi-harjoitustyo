@@ -1,9 +1,3 @@
-
-
-
-// Saaliiskirjaus osio ALKU
-
-// Olipa muka työmaa löytää keino saada päivämäärä näkymään pp.kk.vvvv
 $(document).ready(function () {
     $("#date").datepicker({
       dateFormat: "dd.mm.yy",
@@ -31,7 +25,6 @@ $(document).ready(function () {
     `).join("");
   }
   
-  // Saaliin lisäys
   document.getElementById("catch-form").addEventListener("submit", function (e) {
     e.preventDefault();
   
@@ -46,19 +39,13 @@ $(document).ready(function () {
   
     displayCatches();
   
-    // Resetoi lomakkeen saaliin ilmotuksen jälkeen
     document.getElementById("catch-form").reset();
   });
   
-  // Poistoboksi saaliille
   function deleteCatch(index) {
     catches.splice(index, 1);
     localStorage.setItem("catches", JSON.stringify(catches));
     displayCatches();
   }
-  
-  // Tällä näkkyy kirjatut saaliit kun sivu ladataan 
+
   displayCatches();
-  
-  // Saaliinkirjaus osio LOPPU
-  

@@ -24,20 +24,502 @@
     </div>
   </nav>
 
-  <!-- Metästystajat sisältö -->
+  <!-- Metästystajat / Tämä pitää päivittää vuosittain kun metsästysajat julkaistaan -->
   <div class="container mt-5">
-    <h2 class="text-center">Metsästysajat</h2>
-    <p class="text-center">Katso alueelliset metsästysajat ja suunnittele metsästysretkesi.</p>
-    <div id="hunting-times-container">
-      <!-- Pittää perehtyä miten tämä toteutetaan javascriptillä tms. -->
+    <h2 class="text-center">Metsästysajat Suomessa</h2>
+    <p class="text-center">
+      Valitse laji saadaksesi lisätietoja metsästysajoista.
+      <br>
+      Katso metsästyslain mukaiset lisätiedot ja rajoitukset <a href="https://riista.fi/metsastys/metsastysajat/" target="_blank">Riista.fi-sivustolta</a>
+    </p>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#alliDetails" aria-expanded="false">
+            Alli
+          </button>
+        </h5>
+      </div>
+      <div id="alliDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Merialueilla</p>
+          <p><strong>Metsästysaika:</strong> 1.9.2024 — 31.12.2024</p>
+          <p><strong>Lisätiedot:</strong> Metsästäjäkohtainen kiintiö: 5 allia / vrk. Lakisääteinen saalisilmoitus.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#majavaDetails" aria-expanded="false">
+            Euroopanmajava
+          </button>
+        </h5>
+      </div>
+      <div id="majavaDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Suomen riistakeskuksen myöntämällä MetsL 10 §:n mukaisella pyyntiluvalla</p>
+          <p><strong>Metsästysaika:</strong> 20.8.2024 — 30.4.2025</p>
+          <p><strong>Lisätiedot:</strong> Poikkeusluvalla määrätyt ajat</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#fasaaniDetails" aria-expanded="false">
+            Fasaani
+          </button>
+        </h5>
+      </div>
+      <div id="fasaaniDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Koko maassa</p>
+          <p><strong>Metsästysaika:</strong> 1.9.2024 — 28.2.2025</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#haahkaDetails" aria-expanded="false">
+            Haahka
+          </button>
+        </h5>
+      </div>
+      <div id="haahkaDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Merkityt alueet</p>
+          <p><strong>Metsästysaika:</strong> 1.6.2024 — 15.6.2024</p>
+          <p><strong>Lisätiedot:</strong> Vain uroshaahka</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#haapanaDetails" aria-expanded="false">
+            Haapana
+          </button>
+        </h5>
+      </div>
+      <div id="haapanaDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Koko maassa</p>
+          <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+          <p><strong>Lisätiedot:</strong> Lakisääteinen saalisilmoitus</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#halliDetails" aria-expanded="false">
+            Halli
+          </button>
+        </h5>
+      </div>
+      <div id="halliDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Alueellisen kiintiön puitteissa</p>
+          <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.12.2024</p>
+          <p><strong>Lisätiedot:</strong> Kiintiötiedot riistakeskuksen etusivulta</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#heinataviDetails" aria-expanded="false">
+            Heinätavi
+          </button>
+        </h5>
+      </div>
+      <div id="heinataviDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Koko maassa</p>
+          <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+          <p><strong>Lisätiedot:</strong> Lakisääteinen saalisilmoitus</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#hilleriDetails" aria-expanded="false">
+            Hilleri
+          </button>
+        </h5>
+      </div>
+      <div id="hilleriDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Koko maassa</p>
+          <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.7.2025</p>
+          <p><strong>Lisätiedot:</strong> Naarasta, jolla on pentue, ei saa tappaa 1.5.–31.7.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#hirviDetails" aria-expanded="false">
+            Hirvi
+          </button>
+        </h5>
+      </div>
+      <div id="hirviDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Kuusamon ja Taivalkosken kunnissa sekä Lapin maakunnassa</p>
+          <p><strong>Metsästysaika:</strong> 1.9.2024 — 20.9.2024</p>
+          <p><strong>Lisätiedot:</strong> Pellolta vahtimalla sallittu myös muissa maakunnissa rajoituksin</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ilvesDetails" aria-expanded="false">
+            Ilves
+          </button>
+        </h5>
+      </div>
+      <div id="ilvesDetails" class="collapse">
+        <div class="card-body">
+          <p><strong>Alue:</strong> Poronhoitoalueella</p>
+          <p><strong>Metsästysaika:</strong> 1.10.2024 — 28.2.2025</p>
+          <p><strong>Lisätiedot:</strong> Poikkeusluvalla. Ei koske naarasta, jota pentu seuraa</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ilvesMuuSuomiDetails" aria-expanded="false">
+          Ilves (Muualla maassa)
+        </button>
+      </h5>
+    </div>
+    <div id="ilvesMuuSuomiDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Muu Suomi</p>
+        <p><strong>Metsästysaika:</strong> 1.12.2024 — 28.2.2025</p>
+        <p><strong>Lisätiedot:</strong> Poikkeusluvalla. Ei koske naarasta, jota pentu seuraa</p>
+      </div>
     </div>
   </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#isokoskeloDetails" aria-expanded="false">
+          Isokoskelo
+        </button>
+      </h5>
+    </div>
+    <div id="isokoskeloDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 1.9.2024 — 31.12.2024</p>
+        <p><strong>Lisätiedot:</strong> Lakisääteinen saalisilmoitus</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#itamerennorppaDetails" aria-expanded="false">
+          Itämerennorppa
+        </button>
+      </h5>
+    </div>
+    <div id="itamerennorppaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Kiintiön puitteissa</p>
+        <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.12.2024</p>
+        <p><strong>Lisätiedot:</strong> Kiintiö etusivulla</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#jouhisorsaDetails" aria-expanded="false">
+          Jouhisorsa
+        </button>
+      </h5>
+    </div>
+    <div id="jouhisorsaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+        <p><strong>Lisätiedot:</strong> Lakisääteinen saalisilmoitus</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#kanadanhanhiDetails" aria-expanded="false">
+          Kanadanhanhi
+        </button>
+      </h5>
+    </div>
+    <div id="kanadanhanhiDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 10.8.2024 — 20.8.2024 (pelloilta), 20.8.2024 klo 12 — 31.12.2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#karhuDetails" aria-expanded="false">
+          Karhu
+        </button>
+      </h5>
+    </div>
+    <div id="karhuDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Muu Suomi ja poronhoitoalue</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 — 31.10.2024</p>
+        <p><strong>Lisätiedot:</strong> Kiintiö etusivulla. Poikkeuslupa tarvitaan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#kettuDetails" aria-expanded="false">
+          Kettu
+        </button>
+      </h5>
+    </div>
+    <div id="kettuDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Lapin maakunnassa ja muu Suomi</p>
+        <p><strong>Metsästysaika:</strong> 1.8.2024 — 30.4.2025 (Lapissa), 1.8.2024 — 14.4.2025 (muualla)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#kiirunaDetails" aria-expanded="false">
+          Kiiruna
+        </button>
+      </h5>
+    </div>
+    <div id="kiirunaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Lapin maakunta (Enontekiö, Inari, Utsjoki)</p>
+        <p><strong>Metsästysaika:</strong> 10.9.2024 — 31.3.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#kuusipeuraDetails" aria-expanded="false">
+          Kuusipeura
+        </button>
+      </h5>
+    </div>
+    <div id="kuusipeuraDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Ei Lapin maakunnassa</p>
+        <p><strong>Metsästysaika:</strong> 1.9.2024 — 27.9.2024 vahtimalla, 28.9.2024 — 31.1.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#karppaDetails" aria-expanded="false">
+          Kärppä
+        </button>
+      </h5>
+    </div>
+    <div id="karppaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.3.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#lapasorsaDetails" aria-expanded="false">
+          Lapasorsa
+        </button>
+      </h5>
+    </div>
+    <div id="lapasorsaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+        <p><strong>Lisätiedot:</strong> Lakisääteinen saalisilmoitus</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#lehtokurppaDetails" aria-expanded="false">
+          Lehtokurppa
+        </button>
+      </h5>
+    </div>
+    <div id="lehtokurppaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#merihanhiDetails" aria-expanded="false">
+          Merihanhi
+        </button>
+      </h5>
+    </div>
+    <div id="merihanhiDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Merkityt alueet</p>
+        <p><strong>Metsästysaika:</strong> 10.8.2024 — 20.8.2024 (pelloilta), 20.8.2024 klo 12 — 31.12.2024</p>
+        <p><strong>Lisätiedot:</strong> Kiintiö: 2 merihanhea per metsästäjä per päivä. Saalisilmoitusvelvollisuus</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#metsoDetails" aria-expanded="false">
+          Metso
+        </button>
+      </h5>
+    </div>
+    <div id="metsoDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Useita maakuntia</p>
+        <p><strong>Metsästysaika:</strong> 10.9.2024 — 10.12.2024, Urosmetso 10.1.2025 — 31.1.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#metsahanhiDetails" aria-expanded="false">
+          Metsähanhi
+        </button>
+      </h5>
+    </div>
+    <div id="metsahanhiDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Tietyt alueet, katso tarkemmin riista.fi</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 27.8.2024, 1.10.2024 — 30.11.2024</p>
+        <p><strong>Lisätiedot:</strong> Yksi hanhi per kausi. Saalisilmoitusvelvollisuus.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#metsajanisDetails" aria-expanded="false">
+          Metsäjänis
+        </button>
+      </h5>
+    </div>
+    <div id="metsajanisDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 1.9.2024 — 28.2.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#supikoiraDetails" aria-expanded="false">
+          Supikoira (haitallinen vieraslaji)
+        </button>
+      </h5>
+    </div>
+    <div id="supikoiraDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.7.2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#taviDetails" aria-expanded="false">
+          Tavi
+        </button>
+      </h5>
+    </div>
+    <div id="taviDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 20.8.2024 klo 12 — 31.12.2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#villisikaDetails" aria-expanded="false">
+          Villisika
+        </button>
+      </h5>
+    </div>
+    <div id="villisikaDetails" class="collapse">
+      <div class="card-body">
+        <p><strong>Alue:</strong> Koko maassa</p>
+        <p><strong>Metsästysaika:</strong> 1.8.2024 — 31.7.2025</p>
+        <p><strong>Lisätiedot:</strong> Naarasta, jolla on saman vuoden porsaat, ei saa tappaa 1.3.–31.7. Saalisilmoitusvelvollisuus.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <footer class="bg-light text-center py-4">
     <p class="mb-0">Footteri tähän jotaki</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="./js/functions.js"></script>
 </body>
 </html>
