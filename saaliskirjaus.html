@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- NAVI -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Mehtuusivusto</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Mehtuusivusto <img src="./img/nuotio.png" alt="omalogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -21,7 +21,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
         <li class="nav-item"><a class="nav-link" href="visa.html">Riistavisa</a></li>
         <li class="nav-item"><a class="nav-link" href="metsastysajat.html">Metsästysajat</a></li>
-        <li class="nav-item active"><a class="nav-link" href="saaliskirjaus.html">Saaliin kirjaus</a></li>
+        <li class="nav-item"><a class="nav-link active" href="saaliskirjaus.html">Saaliin kirjaus</a></li>
       </ul>
     </div>
   </nav>
@@ -29,6 +29,7 @@
   <div class="container mt-5">
     <h2 class="text-center">Saaliin kirjaus</h2>
     <p class="text-center">Kirjaa saaliis ja seuraa metsästyshistoriaasi.</p>
+
     <form id="catch-form" class="mx-auto" style="max-width: 500px;">
       <div class="mb-3">
         <label for="species" class="form-label">Eläinlaji</label>
@@ -48,13 +49,12 @@
       </div>
       <button type="submit" class="btn btn-primary">Kirjaa saalis</button>
     </form>
-    <div id="catch-list" class="mt-5">
-      <!-- LOCAL STORAGE tallentaa saaliit -->
-    </div>
+      <div id="catch-list" class="mt-5"></div>
   </div>
 
-  <footer class="bg-light text-center py-4">
-    <p class="mb-0">Footteri tähän jotaki</p>
+  <footer class="text-center py-4">
+    <p class="mb-0">&copy; 2024 Mehtuusivusto.</p>
+    <img src="./img/nuotio.png" alt="omalogo">
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

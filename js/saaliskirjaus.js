@@ -1,3 +1,4 @@
+//Tämä jQuery UI kirjaston datepicker on AI:n toteuttama, en saanut millään päivämäärää pp.mm.vvvv muotoon, jossain kohdassa päivämäärä muuttui mm/dd/yyyy tai muuten jenkki malliin joko lomakkeessa tai kirjatussa saaliskortissa.
 $(document).ready(function () {
     $("#date").datepicker({
       dateFormat: "dd.mm.yy",

@@ -53,38 +53,26 @@
   
   function displayQuiz() {
     const quizContainer = document.getElementById("quiz-container");
-    let output = "";
-  
-    questions.forEach((q, index) => {
-        output += `
-            <div class="question mb-4">
-                <h5>${index + 1}. ${q.question}</h5>
-                ${q.options.map(option => `
-                    <div>
-                        <input type="radio" name="question${index}" value="${option}">
-                        <label>${option}</label>
-                    </div>
-                `).join("")}
-            </div>
-        `;
-    });
-  
-    output += `<button class="btn btn-primary" onclick="submitQuiz()">Lähetä vastaukset</button>`;
-    quizContainer.innerHTML = output;
-  }
-  
-  function submitQuiz() {
-    let score = 0;
-  
-    questions.forEach((q, index) => {
+    quizContainer.innerHTML = questions.map((q, index) => `
+        <div class="question mb-4">
+            <h5>${index + 1}. ${q.question}</h5>
+            ${q.options.map(option => `
+                <div>
+                    <input type="radio" name="question${index}" value="${option}" id="option-${index}-${option}">
+                    <label for="option-${index}-${option}">${option}</label>
+                </div>
+            `).join("")}
+        </div>
+    `).join("") + `<button class="btn btn-primary mt-3" onclick="submitQuiz()">Lähetä vastaukset</button>`;
+}
+
+function submitQuiz() {
+    let score = questions.reduce((totalScore, q, index) => {
         const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-        if (selectedOption && selectedOption.value === q.answer) {
-            score++;
-        }
-    });
-  
-    const quizContainer = document.getElementById("quiz-container");
-    quizContainer.innerHTML = `<h3 class="text-center">Sait ${score} / ${questions.length} oikein!</h3>`;
-  }
-  
-  displayQuiz();
+        return selectedOption && selectedOption.value === q.answer ? totalScore + 1 : totalScore;
+    }, 0);
+
+    document.getElementById("quiz-container").innerHTML = `<h3 class="text-center">Sait ${score} / ${questions.length} oikein!</h3>`;
+}
+
+displayQuiz();
